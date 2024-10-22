@@ -102,6 +102,7 @@ body {
 header {
     text-align: center;
     margin-bottom: 30px;
+    padding-top: 80px;
 }
 
 /* Blog Wrapper */
@@ -110,6 +111,7 @@ header {
     justify-content: space-between; /* Space between the two blog containers */
     width: 80%; /* Adjust width as needed */
     margin: 0 auto; /* Center the blog wrapper */
+    
 }
 
 /* Blog Container */

@@ -7,8 +7,8 @@
 body {
     font-family: "Inria Serif";
     margin: 0;
-    background: url('img/mindfulness.jpg') no-repeat center center fixed; /* Background image */
-    background-size: 100% 970px; /* Adjust percentage for the unzoom effect */
+    /* background: url('img/mindfulness.jpg') no-repeat center center fixed;
+    background-size: 100% 970px; */
 }
 
 
@@ -16,12 +16,15 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000; /* Make sure navbar is on top */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    z-index: 1000;
+    background: url('img/mindfulness.jpg') no-repeat center center fixed;
+    background-size: cover; /* Adjust the size to cover */
 }
 
 .navbar-left {
@@ -134,9 +137,11 @@ body {
 
 /* Mindfulness Methods Section */
 .mindfulness-methods {
-    margin-top: 0px; /* Space below the navbar */
+    margin-top: 0; /* Remove the margin-top to align with the fixed navbar */
     width: 100%;
-    height: 100vh; /* Full height minus navbar */
+    height: 100vh; /* Full height of the viewport */
+    background: url('img/mindfulness.jpg') no-repeat center center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +149,6 @@ body {
     text-align: center;
     padding: 20px;
     position: relative;
-    gap: 40px;
 }
 
 /* Methods Container */
